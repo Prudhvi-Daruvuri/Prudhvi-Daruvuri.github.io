@@ -4,6 +4,7 @@ import { createAboutSection, initializeAboutSection } from './sections/about.js'
 import { createExperienceSection, initializeExperienceSection } from './sections/experience.js';
 import { createProjectsSection, initializeProjectsSection } from './sections/projects.js';
 import { createContactSection, initializeContactSection } from './sections/contact.js';
+import { createTechStackSection, initializeTechStackSection } from './sections/tech-stack.js';
 import { initializeNavigation } from './navigation.js';
 import { initializeBackground } from './background.js';
 
@@ -23,6 +24,7 @@ function initializeWebsite() {
     const sections = [
         { element: createProfileSection(), init: initializeProfileSection },
         { element: createAboutSection(), init: initializeAboutSection },
+        { element: createTechStackSection(), init: initializeTechStackSection },
         { element: createExperienceSection(), init: initializeExperienceSection },
         { element: createProjectsSection(), init: initializeProjectsSection },
         { element: createContactSection(), init: initializeContactSection }
