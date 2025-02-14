@@ -2,6 +2,9 @@
 
 #about {
   position: relative;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 2rem;
 }
 
 .about-containers {
@@ -68,7 +71,8 @@
 
 #about .title {
   text-align: center;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 #about .section__text__p1 {
@@ -78,4 +82,21 @@
 
 #about p {
   line-height: 1.5;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+}
+
+#about .btn {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#about .btn:hover {
+  background-color: var(--bg-primary);
+  color: var(--accent-color);
 }

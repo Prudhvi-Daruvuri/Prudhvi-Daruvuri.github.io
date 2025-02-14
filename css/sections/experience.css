@@ -2,6 +2,9 @@
 
 #experience {
   position: relative;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 2rem;
 }
 
 .experience-sub-title {
@@ -11,10 +14,20 @@
   margin-bottom: 2rem;
 }
 
+#experience .title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#experience p {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
 }
 
 .article-container {
@@ -35,4 +48,19 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+#experience .btn {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#experience .btn:hover {
+  background-color: var(--bg-primary);
+  color: var(--accent-color);
 }
