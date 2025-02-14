@@ -1,5 +1,13 @@
 // About section HTML content and functionality
 export function createAboutSection() {
+    // Load section-specific CSS
+    if (!document.querySelector('link[href="./css/sections/about.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './css/sections/about.css';
+        document.head.appendChild(link);
+    }
+
     const aboutSection = document.createElement('section');
     aboutSection.id = 'about';
     

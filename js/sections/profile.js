@@ -1,5 +1,13 @@
 // Profile section HTML content and functionality
 export function createProfileSection() {
+    // Load section-specific CSS
+    if (!document.querySelector('link[href="./css/sections/profile.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './css/sections/profile.css';
+        document.head.appendChild(link);
+    }
+
     const profileSection = document.createElement('section');
     profileSection.id = 'profile';
     

@@ -1,5 +1,13 @@
 // Contact section HTML content and functionality
 export function createContactSection() {
+    // Load section-specific CSS
+    if (!document.querySelector('link[href="./css/sections/contact.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './css/sections/contact.css';
+        document.head.appendChild(link);
+    }
+
     const contactSection = document.createElement('section');
     contactSection.id = 'contact';
     

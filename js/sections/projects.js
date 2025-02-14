@@ -1,5 +1,13 @@
 // Projects section HTML content and functionality
 export function createProjectsSection() {
+    // Load section-specific CSS
+    if (!document.querySelector('link[href="./css/sections/projects.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './css/sections/projects.css';
+        document.head.appendChild(link);
+    }
+
     const projectsSection = document.createElement('section');
     projectsSection.id = 'projects';
     

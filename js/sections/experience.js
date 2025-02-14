@@ -1,5 +1,13 @@
 // Experience section HTML content and functionality
 export function createExperienceSection() {
+    // Load section-specific CSS
+    if (!document.querySelector('link[href="./css/sections/experience.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './css/sections/experience.css';
+        document.head.appendChild(link);
+    }
+
     const experienceSection = document.createElement('section');
     experienceSection.id = 'experience';
     
