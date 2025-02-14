@@ -61,7 +61,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background-color: var(--bg-primary);
+  background-color: transparent;  /* Changed from var(--bg-primary) */
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(5px);     /* Add subtle blur effect */
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .nav-links {
@@ -253,5 +257,20 @@ footer p {
     top: 0;
     left: 0;
     z-index: -1;
+    pointer-events: none;
+}
+
+/* Add a subtle gradient overlay for better text readability */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, 
+        rgba(26, 26, 26, 0.8) 0%,
+        rgba(26, 26, 26, 0.3) 100%);
+    z-index: 5;
     pointer-events: none;
 }
