@@ -82,7 +82,8 @@
 }
 
 .tech-icon {
-    height: 80px; /* Base size */
+    height: 108px; /* Increased from 90px by 20% */
+    max-width: 216px; /* Increased from 180px by 20% */
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -91,22 +92,26 @@
 
 /* First row - 2 items */
 .tech-icon:nth-child(-n+2) {
-    height: 100px;
+    height: 132px; /* Increased from 110px by 20% */
+    max-width: 264px; /* Increased from 220px by 20% */
 }
 
 /* Second row - 3 items */
 .tech-icon:nth-child(n+3):nth-child(-n+5) {
-    height: 90px;
+    height: 120px; /* Increased from 100px by 20% */
+    max-width: 240px; /* Increased from 200px by 20% */
 }
 
 /* Third row - 4 items */
 .tech-icon:nth-child(n+6):nth-child(-n+9) {
-    height: 80px;
+    height: 108px; /* Increased from 90px by 20% */
+    max-width: 216px; /* Increased from 180px by 20% */
 }
 
 /* Fourth row - remaining items */
 .tech-icon:nth-child(n+10) {
-    height: 70px;
+    height: 96px; /* Increased from 80px by 20% */
+    max-width: 192px; /* Increased from 160px by 20% */
 }
 
 .tech-icon:hover {
@@ -302,15 +307,18 @@
     }
 
     .tech-icon {
-        height: 60px;
+        height: 72px; /* Increased from 60px by 20% */
+        max-width: 144px; /* Increased from 120px by 20% */
     }
     
     .tech-icon:nth-child(-n+2) {
-        height: 80px;
+        height: 96px; /* Increased from 80px by 20% */
+        max-width: 192px; /* Increased from 160px by 20% */
     }
     
     .tech-icon:nth-child(n+3):nth-child(-n+5) {
-        height: 70px;
+        height: 84px; /* Increased from 70px by 20% */
+        max-width: 168px; /* Increased from 140px by 20% */
     }
 }
 
@@ -326,15 +334,15 @@
     }
     
     .tech-icon {
-        height: 50px;
+        height: 60px; /* Increased from 50px by 20% */
     }
     
     .tech-icon:nth-child(-n+2) {
-        height: 70px;
+        height: 84px; /* Increased from 70px by 20% */
     }
     
     .tech-icon:nth-child(n+3):nth-child(-n+5) {
-        height: 60px;
+        height: 72px; /* Increased from 60px by 20% */
     }
 }
 
