@@ -5,9 +5,13 @@ import { createExperienceSection, initializeExperienceSection } from './sections
 import { createProjectsSection, initializeProjectsSection } from './sections/projects.js';
 import { createContactSection, initializeContactSection } from './sections/contact.js';
 import { initializeNavigation } from './navigation.js';
+import { initializeBackground } from './background.js';
 
 // Main function to initialize the website
 function initializeWebsite() {
+    // Initialize background first
+    initializeBackground();
+
     // Initialize navigation
     initializeNavigation();
 

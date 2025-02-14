@@ -16,6 +16,12 @@
   --text-secondary: #b3b3b3;
   --accent-color: #64ffda;
   --border-color: #404040;
+  --matrix-color: rgba(100, 255, 218, 0.05);
+  --node-connection: rgba(100, 255, 218, 0.1);
+  --gradient-pulse: rgba(100, 255, 218, 0.02);
+  --neuron-color: rgba(100, 255, 218, 0.15);
+  --synapse-color: rgba(100, 255, 218, 0.05);
+  --pulse-color: rgba(100, 255, 218, 0.4);
 }
 
 * {
@@ -237,4 +243,15 @@ footer {
 footer p {
   text-align: center;
   color: var(--text-secondary);
+}
+
+/* Add tsParticles container styles */
+#tsparticles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
 }
