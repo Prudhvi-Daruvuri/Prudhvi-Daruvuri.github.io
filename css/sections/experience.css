@@ -2,7 +2,7 @@
 
 #experience {
   position: relative;
-  background-color: var(--bg-secondary);
+  /* background-color: var(--bg-secondary); */
   color: var(--text-primary);
   padding: 2rem;
 }
