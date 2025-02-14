@@ -14,6 +14,7 @@
   margin: auto 0;
   border-radius: 50%;
   overflow: hidden;
+  border: 3px solid var(--accent-color);
 }
 
 #profile .section__pic-container img {
@@ -34,16 +35,19 @@
 #profile .section__text__p1 {
   text-align: center;
   font-size: 1.5rem;
+  color: var(--text-secondary);
 }
 
 #profile .section__text__p2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--accent-color);
 }
 
 #profile .title {
   font-size: 3rem;
   text-align: center;
+  color: var(--text-primary);
 }
 
 #profile .btn-container {
@@ -93,4 +97,14 @@
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+#profile #socials-container .icon {
+  filter: invert(1);
+  transition: all 0.3s ease;
+}
+
+#profile #socials-container .icon:hover {
+  transform: scale(1.2);
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(130deg);
 }
