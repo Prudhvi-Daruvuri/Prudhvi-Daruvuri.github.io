@@ -24,7 +24,7 @@ export function createProfileSection() {
                 <button class="btn btn-color-1">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+                <img src="./assets/pngegg.png" alt="My LinkedIn profile" class="icon" />
                 <img src="./assets/github.png" alt="My Github profile" class="icon" />
             </div>
         </div>

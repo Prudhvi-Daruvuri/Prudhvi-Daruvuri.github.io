@@ -34,6 +34,18 @@
   cursor: default;
 }
 
-.email-icon {
-  height: 2.5rem;
+/* Icon styles specific to contact section */
+#contact .icon {
+    height: 2rem;
+    cursor: pointer;
+}
+
+/* Specific icon styles for contact section */
+#contact .email-icon {
+    filter: invert(1);
+}
+
+/* Remove inversion for LinkedIn icon only */
+#contact img[alt="LinkedIn icon"] {
+    filter: none;
 }

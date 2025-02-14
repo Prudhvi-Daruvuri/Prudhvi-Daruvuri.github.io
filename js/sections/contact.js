@@ -16,11 +16,11 @@ export function createContactSection() {
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon icon-invert" />
                 <p><a href="mailto:prudhvi.daruvuri@gmail.com">prudhvi.daruvuri@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <img src="./assets/pngegg.png" alt="LinkedIn icon" class="icon contact-icon" />
                 <p><a href="https://www.linkedin.com/in/prudhvi-daruvuri/">LinkedIn</a></p>
             </div>
         </div>
