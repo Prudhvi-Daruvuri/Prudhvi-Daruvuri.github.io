@@ -17,9 +17,9 @@ export function createExperienceSection() {
         <div class="timeline">
             <div class="container left">
                 <div class="content">
-                    <h3>Artificial Intelligence Software Developer</h3>
-                    <p>Apr 2023 - Present</p>
-                    <p>Simulation Software & Technology (S2T) Pte Ltd, Singapore</p>
+                    <div class="job-title">Artificial Intelligence Software Developer</div>
+                    <div class="date">Apr 2023 - Present</div>
+                    <div class="company">Simulation Software & Technology (S2T) Pte Ltd, Singapore</div>
                     <ul class="hidden">
                         <li>Implemented a high-performance facial recognition system capable of processing large-scale image and video databases, significantly improving identification accuracy and scalability.</li>
                         <li>Designed and deployed a reverse multi-modal search application using CLIP and ImageBind embeddings, enabling instant retrieval from over 5M images with seamless user interaction.</li>
@@ -33,9 +33,9 @@ export function createExperienceSection() {
             </div>
             <div class="container right">
                 <div class="content">
-                    <h3>Machine Learning Developer (Computer Vision)</h3>
-                    <p>Apr 2021 - Apr 2023</p>
-                    <p>Cynapse.ai, Singapore</p>
+                    <div class="job-title">Machine Learning Developer (Computer Vision)</div>
+                    <div class="date">Apr 2021 - Apr 2023</div>
+                    <div class="company">Cynapse.ai, Singapore</div>
                     <ul class="hidden">
                         <li>Developed and optimized video analytics pipelines using C++, enhancing processing speed and ensuring seamless integration with client applications.</li>
                         <li>Converted deep learning models to ONNX, UFF, and TensorRT for efficient deployment in production pipelines, reducing model inference latency by 35%.</li>
@@ -50,9 +50,9 @@ export function createExperienceSection() {
             </div>
             <div class="container left">
                 <div class="content">
-                    <h3>Software Engineer</h3>
-                    <p>Jun 2018 - Mar 2021</p>
-                    <p>Tata Consultancy Services, Hyderabad</p>
+                    <div class="job-title">Software Engineer</div>
+                    <div class="date">Jun 2018 - Mar 2021</div>
+                    <div class="company">Tata Consultancy Services, Hyderabad</div>
                     <ul class="hidden">
                         <li>Designed and developed ETL pipelines using Informatica PowerCenter, automating data ingestion and transformation for Bank of America projects, ensuring 100% compliance with data processing standards.</li>
                         <li>Managed loading by designing and implementing multi-source data files from systems like Netezza, Oracle, and MySQL into Exadata staging areas, streamlining the data consolidation process.</li>
@@ -65,9 +65,9 @@ export function createExperienceSection() {
             </div>
             <div class="container right">
                 <div class="content">
-                    <h3>Software Developer Intern</h3>
-                    <p>May 2017 - Jul 2017</p>
-                    <p>Third Wave Power, Singapore</p>
+                    <div class="job-title">Software Developer Intern</div>
+                    <div class="date">May 2017 - Jul 2017</div>
+                    <div class="company">Third Wave Power, Singapore</div>
                     <ul class="hidden">
                         <li>Assisted the R&D team in prototyping and setting up a LoRaWAN network, enabling long-range, low-power wireless communication for IoT devices.</li>
                         <li>Researched and evaluated open-source network servers, identifying feasible solutions for integration with RisingHF gateways.</li>
