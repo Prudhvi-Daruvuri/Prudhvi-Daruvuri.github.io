@@ -87,8 +87,67 @@ export function createExperienceSection() {
 // Initialize experience section event listeners
 export function initializeExperienceSection() {
     const arrow = document.querySelector('#experience .arrow');
-    arrow.addEventListener('click', () => {
-        const targetSection = arrow.getAttribute('data-target');
-        document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+    if (arrow) {
+        arrow.addEventListener('click', () => {
+            const targetSection = arrow.getAttribute('data-target');
+            document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+    // Add event listeners for timeline containers
+    const containers = document.querySelectorAll('.timeline .container');
+    let activeContainer = null;
+
+    containers.forEach(container => {
+        container.addEventListener('mouseenter', () => {
+            // Reset any existing active container
+            if (activeContainer && activeContainer !== container) {
+                resetSpacing(activeContainer);
+            }
+
+            const ul = container.querySelector('ul');
+            if (ul) {
+                // Show the ul temporarily to get its height
+                ul.style.display = 'block';
+                ul.style.visibility = 'hidden';
+                const ulHeight = ul.getBoundingClientRect().height;
+                ul.style.display = '';
+                ul.style.visibility = '';
+
+                // Add extra padding to the spacing
+                const spacing = ulHeight + 60; // 60px extra padding
+
+                // Apply spacing to the current container
+                container.style.marginBottom = `${spacing}px`;
+
+                // Find the next container and adjust its margin if needed
+                const nextContainer = container.nextElementSibling;
+                if (nextContainer) {
+                    nextContainer.style.marginTop = '20px'; // Add some spacing to the next container
+                }
+
+                activeContainer = container;
+            }
+        });
+
+        container.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!container.matches(':hover')) {
+                    resetSpacing(container);
+                    activeContainer = null;
+                }
+            }, 100);
+        });
     });
+
+    function resetSpacing(container) {
+        container.style.marginBottom = '30px'; // Reset to default margin
+        const nextContainer = container.nextElementSibling;
+        if (nextContainer) {
+            nextContainer.style.marginTop = '0';
+        }
+    }
 }
+
+// Initialize experience section
+initializeExperienceSection();
