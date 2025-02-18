@@ -64,3 +64,86 @@ article .icon {
   background-color: var(--bg-primary);
   color: var(--accent-color);
 }
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #64ffda;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Left containers */
+.container.left {
+  left: 0;
+}
+
+/* Right containers */
+.container.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.container.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 15px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #64ffda;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #64ffda;
+}
+
+/* Add arrows to the right container (pointing left) */
+.container.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 15px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #64ffda;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #64ffda transparent transparent;
+}
+
+/* Content */
+.content {
+  padding: 20px 30px;
+  background-color: #252525;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Hide bullet points by default */
+.content ul {
+  display: none;
+}
+
+/* Show bullet points on hover */
+.content:hover ul {
+  display: block;
+}
