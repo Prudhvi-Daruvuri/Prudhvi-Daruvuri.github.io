@@ -15,9 +15,6 @@ export function createAboutSection() {
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/prudhvi2.png" alt="Profile picture" class="about-pic" />
-            </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
